@@ -21,34 +21,35 @@ public class JoueurModel {
 	        return pieces;
 	    }
 
-
+/*
 	    public void initializePieces(){
 	        if(couleur == true){
 	            for(int i=0; i<PION; i++){ // draw pawns
-	                pieces.add(new PionModel(true,i,2));
+	                pieces.add(new PionModel(true,square_+i+_2));
 	            }
-	            pieces.add(new TourModel(true, 0, 0));
-	            pieces.add(new TourModel(true, 7, 0));
-	            pieces.add(new FouModel(true, 2, 0));
-	            pieces.add(new FouModel(true, 5, 0));
-	            pieces.add(new CavalierModel(true, 1, 0));
-	            pieces.add(new CavalierModel(true, 6, 0));
-	            pieces.add(new ReineModel(true, 3, 0));
-	            pieces.add(new RoiModel(true, 4, 0));
+	            pieces.add(new TourModel(true, square_0_0));
+	            pieces.add(new TourModel(true, square_7_0));
+	            pieces.add(new FouModel(true, square_2_0));
+	            pieces.add(new FouModel(true, square_5_0));
+	            pieces.add(new CavalierModel(true, square_1_0));
+	            pieces.add(new CavalierModel(true, square_6_0));
+	            pieces.add(new ReineModel(true, square_3_0));
+	            pieces.add(new RoiModel(true, square_4_0));
 	        }
 	        else{
 	            for(int i=0; i<PION; i++){ // draw pawns
-	                pieces.add(new PionModel(true,i,6));
+	                pieces.add(new PionModel(true,square_+i+_6));
 	            }
-	            pieces.add(new TourModel(true, 0, 7));
-	            pieces.add(new TourModel(true, 7, 7));
-	            pieces.add(new FouModel(true, 2, 7));
-	            pieces.add(new FouModel(true, 5, 7));
-	            pieces.add(new CavalierModel(true, 1, 7));
-	            pieces.add(new CavalierModel(true, 6, 7));
-	            pieces.add(new ReineModel(true, 3, 7));
-	            pieces.add(new RoiModel(true, 4, 7));
+	            pieces.add(new TourModel(true, square_0_7));
+	            pieces.add(new TourModel(true, square_7_7));
+	            pieces.add(new FouModel(true, square_2_7));
+	            pieces.add(new FouModel(true, square_5_7));
+	            pieces.add(new CavalierModel(true, square_1_7));
+	            pieces.add(new CavalierModel(true, square_6_7));
+	            pieces.add(new ReineModel(true, square_3_7));
+	            pieces.add(new RoiModel(true, square_4_7));
 	        }
 
 	    }
+	    */
 }
