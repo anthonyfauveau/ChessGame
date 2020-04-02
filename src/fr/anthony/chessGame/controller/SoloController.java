@@ -68,42 +68,42 @@ public class SoloController implements Initializable{
 		piecesWhite = new ArrayList<>();
 		
 		//piece black
-            piecesBlack.add(new Pion(true,square_0_1, couleur));
-            piecesBlack.add(new Pion(true,square_1_1, couleur));
-            piecesBlack.add(new Pion(true,square_2_1, couleur));
-            piecesBlack.add(new Pion(true,square_3_1, couleur));
-            piecesBlack.add(new Pion(true,square_4_1, couleur));
-            piecesBlack.add(new Pion(true,square_5_1, couleur));
-            piecesBlack.add(new Pion(true,square_6_1, couleur));
-            piecesBlack.add(new Pion(true,square_7_1, couleur));
+            piecesBlack.add(new Pion(true,square_0_1, BLACK));
+            piecesBlack.add(new Pion(true,square_1_1, BLACK));
+            piecesBlack.add(new Pion(true,square_2_1, BLACK));
+            piecesBlack.add(new Pion(true,square_3_1, BLACK));
+            piecesBlack.add(new Pion(true,square_4_1, BLACK));
+            piecesBlack.add(new Pion(true,square_5_1, BLACK));
+            piecesBlack.add(new Pion(true,square_6_1, BLACK));
+            piecesBlack.add(new Pion(true,square_7_1, BLACK));
            
-            piecesBlack.add(new Tour(true, square_0_0, couleur));
-            piecesBlack.add(new Tour(true, square_7_0, couleur));
-            piecesBlack.add(new Fou(true, square_2_0, couleur));
-            piecesBlack.add(new Fou(true, square_5_0, couleur));
-            piecesBlack.add(new Cavalier(true, square_1_0, couleur));
-            piecesBlack.add(new Cavalier(true, square_6_0, couleur));
-            piecesBlack.add(new Reine(true, square_3_0, couleur));
-            piecesBlack.add(new Roi(true, square_4_0, couleur));
+            piecesBlack.add(new Tour(true, square_0_0, BLACK));
+            piecesBlack.add(new Tour(true, square_7_0, BLACK));
+            piecesBlack.add(new Fou(true, square_2_0, BLACK));
+            piecesBlack.add(new Fou(true, square_5_0, BLACK));
+            piecesBlack.add(new Cavalier(true, square_1_0, BLACK));
+            piecesBlack.add(new Cavalier(true, square_6_0, BLACK));
+            piecesBlack.add(new Reine(true, square_3_0, BLACK));
+            piecesBlack.add(new Roi(true, square_4_0, BLACK));
            
       //Piece white
-            piecesWhite.add(new Pion(true,square_0_6, couleur));
-            piecesWhite.add(new Pion(true,square_1_6, couleur));
-            piecesWhite.add(new Pion(true,square_2_6, couleur));
-            piecesWhite.add(new Pion(true,square_3_6, couleur));
-            piecesWhite.add(new Pion(true,square_4_6, couleur));
-            piecesWhite.add(new Pion(true,square_5_6, couleur));
-            piecesWhite.add(new Pion(true,square_6_6, couleur));
-            piecesWhite.add(new Pion(true,square_7_6, couleur));
+            piecesWhite.add(new Pion(true,square_0_6, WHITE));
+            piecesWhite.add(new Pion(true,square_1_6, WHITE));
+            piecesWhite.add(new Pion(true,square_2_6, WHITE));
+            piecesWhite.add(new Pion(true,square_3_6, WHITE));
+            piecesWhite.add(new Pion(true,square_4_6, WHITE));
+            piecesWhite.add(new Pion(true,square_5_6, WHITE));
+            piecesWhite.add(new Pion(true,square_6_6, WHITE));
+            piecesWhite.add(new Pion(true,square_7_6, WHITE));
           
-            piecesWhite.add(new Tour(true, square_0_7, couleur));
-            piecesWhite.add(new Tour(true, square_7_7, couleur));
-            piecesWhite.add(new Fou(true, square_2_7, couleur));
-            piecesWhite.add(new Fou(true, square_5_7, couleur));
-            piecesWhite.add(new Cavalier(true, square_1_7, couleur));
-            piecesWhite.add(new Cavalier(true, square_6_7, couleur));
-            piecesWhite.add(new Reine(true, square_3_7, couleur));
-            piecesWhite.add(new Roi(true, square_4_7, couleur));
+            piecesWhite.add(new Tour(true, square_0_7, WHITE));
+            piecesWhite.add(new Tour(true, square_7_7, WHITE));
+            piecesWhite.add(new Fou(true, square_2_7, WHITE));
+            piecesWhite.add(new Fou(true, square_5_7, WHITE));
+            piecesWhite.add(new Cavalier(true, square_1_7, WHITE));
+            piecesWhite.add(new Cavalier(true, square_6_7, WHITE));
+            piecesWhite.add(new Reine(true, square_3_7, WHITE));
+            piecesWhite.add(new Roi(true, square_4_7, WHITE));
            
         
 		   
