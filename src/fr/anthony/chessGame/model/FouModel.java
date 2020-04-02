@@ -1,31 +1,43 @@
 package fr.anthony.chessGame.model;
 
-import javafx.scene.effect.ImageInput;
+
 import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.StackPane;
 
 public class FouModel extends PieceModel {
 	
-	public Image fou1 = new Image("/fr/anthony/chessGame/items/bishopBlack.png");
-	public ImageInput fouBlack = new ImageInput(fou1,10,10);
-	public Image fou2 = new Image("/fr/anthony/chessGame/items/bishopWhite.png");
-	public ImageInput fouWhite = new ImageInput(fou2,10,10);
+	public Image fouBlack = new Image("/fr/anthony/chessGame/items/bishopBlack.png");
+	public Image fouWhite = new Image("/fr/anthony/chessGame/items/bishopWhite.png");
+	public ImageView imageView = new ImageView();
 	
 	public FouModel(boolean pAvailable, StackPane square, boolean color) {
 		super(pAvailable, square);
 		
 		if(color == true) {
-			square.setEffect(getFouBlack());
+			square.getChildren().add(imageView);
+			imageView.setImage(getFouBlack());
+			imageView.setFitWidth(64);
+			imageView.setFitHeight(64);
+			imageView.setPreserveRatio(true);
+			imageView.setSmooth(true);
+		    imageView.setCache(true);
 		}else {
-			square.setEffect(getFouWhite());
+			square.getChildren().add(imageView);
+			imageView.setImage(getFouWhite());
+			imageView.setFitWidth(64);
+			imageView.setFitHeight(64);
+			imageView.setPreserveRatio(true);
+			imageView.setSmooth(true);
+		    imageView.setCache(true);
 		}
 	}
 	
-	public ImageInput getFouBlack() {
+	public Image getFouBlack() {
 		return fouBlack;
 	}
 	
-	public ImageInput getFouWhite() {
+	public Image getFouWhite() {
 		return fouWhite;
 	}
 }

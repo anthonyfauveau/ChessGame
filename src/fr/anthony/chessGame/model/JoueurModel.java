@@ -21,35 +21,9 @@ public class JoueurModel {
 	        return pieces;
 	    }
 
-/*
-	    public void initializePieces(){
-	        if(couleur == true){
-	            for(int i=0; i<PION; i++){ // draw pawns
-	                pieces.add(new PionModel(true,square_+i+_2));
-	            }
-	            pieces.add(new TourModel(true, square_0_0));
-	            pieces.add(new TourModel(true, square_7_0));
-	            pieces.add(new FouModel(true, square_2_0));
-	            pieces.add(new FouModel(true, square_5_0));
-	            pieces.add(new CavalierModel(true, square_1_0));
-	            pieces.add(new CavalierModel(true, square_6_0));
-	            pieces.add(new ReineModel(true, square_3_0));
-	            pieces.add(new RoiModel(true, square_4_0));
-	        }
-	        else{
-	            for(int i=0; i<PION; i++){ // draw pawns
-	                pieces.add(new PionModel(true,square_+i+_6));
-	            }
-	            pieces.add(new TourModel(true, square_0_7));
-	            pieces.add(new TourModel(true, square_7_7));
-	            pieces.add(new FouModel(true, square_2_7));
-	            pieces.add(new FouModel(true, square_5_7));
-	            pieces.add(new CavalierModel(true, square_1_7));
-	            pieces.add(new CavalierModel(true, square_6_7));
-	            pieces.add(new ReineModel(true, square_3_7));
-	            pieces.add(new RoiModel(true, square_4_7));
-	        }
 
+	    public void initializePiecesPlayer(){
+	    
 	    }
-	    */
+	    
 }

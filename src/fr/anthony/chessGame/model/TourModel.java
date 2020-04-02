@@ -1,33 +1,47 @@
 package fr.anthony.chessGame.model;
 
 
-import javafx.scene.effect.ImageInput;
+
 import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.StackPane;
 
 public class TourModel extends PieceModel{
 	
-	public Image tour1 = new Image("/fr/anthony/chessGame/items/tourBlack.png");
-	public ImageInput tourBlack = new ImageInput(tour1,10,10);
-	public Image tour2 = new Image("/fr/anthony/chessGame/items/tourWhite.png");
-	public ImageInput tourWhite = new ImageInput(tour2,10,10);
+	public Image tourBlack = new Image("/fr/anthony/chessGame/items/tourBlack.png");
+	public Image tourWhite = new Image("/fr/anthony/chessGame/items/tourWhite.png");
+	public ImageView imageView = new ImageView() ;
 	
 	
 	public TourModel(boolean pAvailable, StackPane square, boolean color) {
 		super(pAvailable, square);
 		if(color == true) {
-			square.setEffect(getTourBlack());
+			square.getChildren().add(imageView);
+			imageView.setImage(getTourBlack());
+			imageView.setFitWidth(64);
+			imageView.setFitHeight(64);
+			imageView.setPreserveRatio(true);
+			imageView.setSmooth(true);
+		    imageView.setCache(true);
+			
+			
 		}else {
-			square.setEffect(getTourWhite());
+			square.getChildren().add(imageView);
+			imageView.setImage(getTourWhite());
+			imageView.setFitWidth(64);
+			imageView.setFitHeight(64);
+			imageView.setPreserveRatio(true);
+			imageView.setSmooth(true);
+		    imageView.setCache(true);
 		}
 		
 	}
 	
-	public ImageInput getTourBlack() {
+	public Image getTourBlack() {
 		return tourBlack;
 	}
 	
-	public ImageInput getTourWhite() {
+	public Image getTourWhite() {
 		return tourWhite;
 	}
 }

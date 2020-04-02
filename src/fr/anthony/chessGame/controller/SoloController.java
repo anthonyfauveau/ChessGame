@@ -21,8 +21,6 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.effect.ImageInput;
-import javafx.scene.image.Image;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
@@ -32,149 +30,31 @@ public class SoloController implements Initializable{
 	@FXML
 	private GridPane chessboard;
 	
-//region SQUAREStackPane
 	
 	@FXML
-	private StackPane square_0_0;
+	private StackPane square_0_0, square_1_0, square_2_0, square_3_0, square_4_0, square_5_0, square_6_0, square_7_0;
 	@FXML
-	private StackPane square_1_0;
+	private StackPane square_0_1, square_1_1, square_2_1, square_3_1, square_4_1, square_5_1, square_6_1, square_7_1;
 	@FXML
-	private StackPane square_2_0;
+	private StackPane square_0_2, square_1_2, square_2_2, square_3_2, square_4_2, square_5_2, square_6_2, square_7_2;
 	@FXML
-	private StackPane square_3_0;
+	private StackPane square_0_3, square_1_3, square_2_3, square_3_3, square_4_3, square_5_3, square_6_3, square_7_3;
 	@FXML
-	private StackPane square_4_0;
+	private StackPane square_0_4, square_1_4, square_2_4, square_3_4, square_4_4, square_5_4, square_6_4, square_7_4;
 	@FXML
-	private StackPane square_5_0;
+	private StackPane square_0_5, square_1_5, square_2_5, square_3_5, square_4_5, square_5_5, square_6_5, square_7_5;
 	@FXML
-	private StackPane square_6_0;
+	private StackPane square_0_6, square_1_6, square_2_6, square_3_6, square_4_6, square_5_6, square_6_6, square_7_6;
 	@FXML
-	private StackPane square_7_0;
-	
-	@FXML
-	private StackPane square_0_1;
-	@FXML
-	private StackPane square_1_1;
-	@FXML
-	private StackPane square_2_1;
-	@FXML
-	private StackPane square_3_1;
-	@FXML
-	private StackPane square_4_1;
-	@FXML
-	private StackPane square_5_1;
-	@FXML
-	private StackPane square_6_1;
-	@FXML
-	private StackPane square_7_1;
-	
-	@FXML
-	private StackPane square_0_2;
-	@FXML
-	private StackPane square_1_2;
-	@FXML
-	private StackPane square_2_2;
-	@FXML
-	private StackPane square_3_2;
-	@FXML
-	private StackPane square_4_2;
-	@FXML
-	private StackPane square_5_2;
-	@FXML
-	private StackPane square_6_2;
-	@FXML
-	private StackPane square_7_2;
-	
-	@FXML
-	private StackPane square_0_3;
-	@FXML
-	private StackPane square_1_3;
-	@FXML
-	private StackPane square_2_3;
-	@FXML
-	private StackPane square_3_3;
-	@FXML
-	private StackPane square_4_3;
-	@FXML
-	private StackPane square_5_3;
-	@FXML
-	private StackPane square_6_3;
-	@FXML
-	private StackPane square_7_3;
-	
-	@FXML
-	private StackPane square_0_4;
-	@FXML
-	private StackPane square_1_4;
-	@FXML
-	private StackPane square_2_4;
-	@FXML
-	private StackPane square_3_4;
-	@FXML
-	private StackPane square_4_4;
-	@FXML
-	private StackPane square_5_4;
-	@FXML
-	private StackPane square_6_4;
-	@FXML
-	private StackPane square_7_4;
-	
-	@FXML
-	private StackPane square_0_5;
-	@FXML
-	private StackPane square_1_5;
-	@FXML
-	private StackPane square_2_5;
-	@FXML
-	private StackPane square_3_5;
-	@FXML
-	private StackPane square_4_5;
-	@FXML
-	private StackPane square_5_5;
-	@FXML
-	private StackPane square_6_5;
-	@FXML
-	private StackPane square_7_5;
-	
-	@FXML
-	private StackPane square_0_6;
-	@FXML
-	private StackPane square_1_6;
-	@FXML
-	private StackPane square_2_6;
-	@FXML
-	private StackPane square_3_6;
-	@FXML
-	private StackPane square_4_6;
-	@FXML
-	private StackPane square_5_6;
-	@FXML
-	private StackPane square_6_6;
-	@FXML
-	private StackPane square_7_6;
-	
-	@FXML
-	private StackPane square_0_7;
-	@FXML
-	private StackPane square_1_7;
-	@FXML
-	private StackPane square_2_7;
-	@FXML
-	private StackPane square_3_7;
-	@FXML
-	private StackPane square_4_7;
-	@FXML
-	private StackPane square_5_7;
-	@FXML
-	private StackPane square_6_7;
-	@FXML
-	private StackPane square_7_7;
-//enregion
+	private StackPane square_0_7, square_1_7, square_2_7, square_3_7, square_4_7, square_5_7, square_6_7, square_7_7;
 
-	public final int PION = 8;
-    public final int FOU = 2;
-    public final int TOUR = 2;
-    public boolean couleur = true;
+
+	
+    public int TOUR = 0;
+    public final boolean BLACK = true;
+    public final boolean WHITE = false;
+    
+    public boolean couleur = WHITE;
 
     private List<PieceModel> pieces = new ArrayList<>();
 
@@ -184,13 +64,11 @@ public class SoloController implements Initializable{
         return pieces;
     }
     
-    public Image roi1 = new Image("/fr/anthony/chessGame/items/kingBlack.png");
-	public ImageInput roiBlack = new ImageInput(roi1,10,10);
-	
+    
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
 		
-	
+		
 		
 		if(couleur == true){
            

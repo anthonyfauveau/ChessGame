@@ -1,30 +1,42 @@
 package fr.anthony.chessGame.model;
 
-import javafx.scene.effect.ImageInput;
+
 import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.StackPane;
 
 public class ReineModel extends PieceModel{
 	
-	public Image reine1 = new Image("/fr/anthony/chessGame/items/queenBlack.png");
-	public ImageInput reineBlack = new ImageInput(reine1,10,10);
-	public Image reine2 = new Image("/fr/anthony/chessGame/items/queenWhite.png");
-	public ImageInput reineWhite = new ImageInput(reine2,10,10);
+	public Image reineBlack = new Image("/fr/anthony/chessGame/items/queenBlack.png");
+	public Image reineWhite = new Image("/fr/anthony/chessGame/items/queenWhite.png");
+	public ImageView imageView = new ImageView();
 	
 	public ReineModel(boolean pAvailable, StackPane square,boolean color) {
 		super(pAvailable, square);
 		if(color == true) {
-			square.setEffect(getReineBlack());
+			square.getChildren().add(imageView);
+			imageView.setImage(getReineBlack());
+			imageView.setFitWidth(64);
+			imageView.setFitHeight(64);
+			imageView.setPreserveRatio(true);
+			imageView.setSmooth(true);
+		    imageView.setCache(true);
 		}else {
-			square.setEffect(getReineWhite());
+			square.getChildren().add(imageView);
+			imageView.setImage(getReineWhite());
+			imageView.setFitWidth(64);
+			imageView.setFitHeight(64);
+			imageView.setPreserveRatio(true);
+			imageView.setSmooth(true);
+		    imageView.setCache(true);
 		}
 	}
 	
-	public ImageInput getReineBlack() {
+	public Image getReineBlack() {
 		return reineBlack;
 	}
 	
-	public ImageInput getReineWhite() {
+	public Image getReineWhite() {
 		return reineWhite;
 	}
 }

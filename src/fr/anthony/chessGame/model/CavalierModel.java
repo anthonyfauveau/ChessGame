@@ -1,31 +1,43 @@
 package fr.anthony.chessGame.model;
 
-import javafx.scene.effect.ImageInput;
+
 import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.StackPane;
 
 public class CavalierModel extends PieceModel{
 	
-	public Image cavalier1 = new Image("/fr/anthony/chessGame/items/cavalierBlack.png");
-	public ImageInput cavalierBlack = new ImageInput(cavalier1,10,10);
-	public Image cavalier2 = new Image("/fr/anthony/chessGame/items/cavalierWhite.png");
-	public ImageInput cavalierWhite = new ImageInput(cavalier2,10,10);
+	public Image cavalierBlack = new Image("/fr/anthony/chessGame/items/cavalierBlack.png");
+	public Image cavalierWhite = new Image("/fr/anthony/chessGame/items/cavalierWhite.png");
+	public ImageView imageView = new ImageView();
 
 	public CavalierModel(boolean pAvailable, StackPane square, boolean color) {
 		super(pAvailable, square);
 		
 		if(color == true) {
-			square.setEffect(getCavalierBlack());
+			square.getChildren().add(imageView);
+			imageView.setImage(getCavalierBlack());
+			imageView.setFitWidth(64);
+			imageView.setFitHeight(64);
+			imageView.setPreserveRatio(true);
+			imageView.setSmooth(true);
+		    imageView.setCache(true);
 		}else {
-			square.setEffect(getCavalierWhite());
+			square.getChildren().add(imageView);
+			imageView.setImage(getCavalierWhite());
+			imageView.setFitWidth(64);
+			imageView.setFitHeight(64);
+			imageView.setPreserveRatio(true);
+			imageView.setSmooth(true);
+		    imageView.setCache(true);
 		}
 	}
 	
-	public ImageInput getCavalierBlack() {
+	public Image getCavalierBlack() {
 		return cavalierBlack;
 	}
 	
-	public ImageInput getCavalierWhite() {
+	public Image getCavalierWhite() {
 		return cavalierWhite;
 	}
 }
