@@ -55,64 +55,57 @@ public class SoloController implements Initializable{
     public final boolean WHITE = false;
     
     public boolean couleur = WHITE;
-
-    private List<Piece> pieces = new ArrayList<>();
-
-   
-
-    public List<Piece> getPieces() {
-        return pieces;
-    }
     
+    private List<Piece> piecesBlack;
+	private List<Piece> piecesWhite;
+
+  
     
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
 		
+		piecesBlack = new ArrayList<>();
+		piecesWhite = new ArrayList<>();
 		
-		
-		if(couleur == true){
+		//piece black
+            piecesBlack.add(new Pion(true,square_0_1, couleur));
+            piecesBlack.add(new Pion(true,square_1_1, couleur));
+            piecesBlack.add(new Pion(true,square_2_1, couleur));
+            piecesBlack.add(new Pion(true,square_3_1, couleur));
+            piecesBlack.add(new Pion(true,square_4_1, couleur));
+            piecesBlack.add(new Pion(true,square_5_1, couleur));
+            piecesBlack.add(new Pion(true,square_6_1, couleur));
+            piecesBlack.add(new Pion(true,square_7_1, couleur));
            
-            pieces.add(new Pion(true,square_0_1, couleur));
-            pieces.add(new Pion(true,square_1_1, couleur));
-            pieces.add(new Pion(true,square_2_1, couleur));
-            pieces.add(new Pion(true,square_3_1, couleur));
-            pieces.add(new Pion(true,square_4_1, couleur));
-            pieces.add(new Pion(true,square_5_1, couleur));
-            pieces.add(new Pion(true,square_6_1, couleur));
-            pieces.add(new Pion(true,square_7_1, couleur));
+            piecesBlack.add(new Tour(true, square_0_0, couleur));
+            piecesBlack.add(new Tour(true, square_7_0, couleur));
+            piecesBlack.add(new Fou(true, square_2_0, couleur));
+            piecesBlack.add(new Fou(true, square_5_0, couleur));
+            piecesBlack.add(new Cavalier(true, square_1_0, couleur));
+            piecesBlack.add(new Cavalier(true, square_6_0, couleur));
+            piecesBlack.add(new Reine(true, square_3_0, couleur));
+            piecesBlack.add(new Roi(true, square_4_0, couleur));
            
-            pieces.add(new Tour(true, square_0_0, couleur));
-            pieces.add(new Tour(true, square_7_0, couleur));
-            pieces.add(new Fou(true, square_2_0, couleur));
-            pieces.add(new Fou(true, square_5_0, couleur));
-            pieces.add(new Cavalier(true, square_1_0, couleur));
-            pieces.add(new Cavalier(true, square_6_0, couleur));
-            pieces.add(new Reine(true, square_3_0, couleur));
-            pieces.add(new Roi(true, square_4_0, couleur));
-           
-        }
-        else
-        {
-           
-            pieces.add(new Pion(true,square_0_6, couleur));
-            pieces.add(new Pion(true,square_1_6, couleur));
-            pieces.add(new Pion(true,square_2_6, couleur));
-            pieces.add(new Pion(true,square_3_6, couleur));
-            pieces.add(new Pion(true,square_4_6, couleur));
-            pieces.add(new Pion(true,square_5_6, couleur));
-            pieces.add(new Pion(true,square_6_6, couleur));
-            pieces.add(new Pion(true,square_7_6, couleur));
+      //Piece white
+            piecesWhite.add(new Pion(true,square_0_6, couleur));
+            piecesWhite.add(new Pion(true,square_1_6, couleur));
+            piecesWhite.add(new Pion(true,square_2_6, couleur));
+            piecesWhite.add(new Pion(true,square_3_6, couleur));
+            piecesWhite.add(new Pion(true,square_4_6, couleur));
+            piecesWhite.add(new Pion(true,square_5_6, couleur));
+            piecesWhite.add(new Pion(true,square_6_6, couleur));
+            piecesWhite.add(new Pion(true,square_7_6, couleur));
           
-            pieces.add(new Tour(true, square_0_7, couleur));
-            pieces.add(new Tour(true, square_7_7, couleur));
-            pieces.add(new Fou(true, square_2_7, couleur));
-            pieces.add(new Fou(true, square_5_7, couleur));
-            pieces.add(new Cavalier(true, square_1_7, couleur));
-            pieces.add(new Cavalier(true, square_6_7, couleur));
-            pieces.add(new Reine(true, square_3_7, couleur));
-            pieces.add(new Roi(true, square_4_7, couleur));
+            piecesWhite.add(new Tour(true, square_0_7, couleur));
+            piecesWhite.add(new Tour(true, square_7_7, couleur));
+            piecesWhite.add(new Fou(true, square_2_7, couleur));
+            piecesWhite.add(new Fou(true, square_5_7, couleur));
+            piecesWhite.add(new Cavalier(true, square_1_7, couleur));
+            piecesWhite.add(new Cavalier(true, square_6_7, couleur));
+            piecesWhite.add(new Reine(true, square_3_7, couleur));
+            piecesWhite.add(new Roi(true, square_4_7, couleur));
            
-        }
+        
 		   
 	}
 	
@@ -131,5 +124,12 @@ public class SoloController implements Initializable{
 		window.setScene(AccueilTableViewScene);
 		window.show();
 	}
-
+	
+	public List<Piece> getPiecesBlack() {
+        return piecesBlack;
+    }
+    
+    public List<Piece> getPieceswhite() {
+        return piecesWhite;
+    }
 }

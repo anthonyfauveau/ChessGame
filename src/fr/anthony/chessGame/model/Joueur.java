@@ -10,13 +10,13 @@ public class Joueur {
 	 public final int PION = 8;
 	    public final int FOU = 2;
 	    public final int TOUR = 2;
-	    public boolean couleur;
+	    public boolean white;
 
 	    private List<Piece> pieces = new ArrayList<>();
 
 	    public Joueur(boolean pCouleur) {
 	        
-	        couleur = pCouleur;
+	        white = pCouleur;
 	    }
 
 	    public List<Piece> getPieces() {
