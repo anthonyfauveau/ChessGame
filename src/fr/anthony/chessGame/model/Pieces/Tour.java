@@ -1,43 +1,47 @@
-package fr.anthony.chessGame.model;
+package fr.anthony.chessGame.model.Pieces;
+
 
 
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.StackPane;
 
-public class PionModel extends PieceModel {
+public class Tour extends Piece{
+	
+	public Image tourBlack = new Image("/fr/anthony/chessGame/items/tourBlack.png");
+	public Image tourWhite = new Image("/fr/anthony/chessGame/items/tourWhite.png");
+	public ImageView imageView = new ImageView() ;
 	
 	
-	public Image pionBlack = new Image("/fr/anthony/chessGame/items/pawnBlack.png");
-	public Image pionWhite = new Image("/fr/anthony/chessGame/items/pawnWhite.png");
-	public ImageView imageView = new ImageView();
-	
-	public PionModel(boolean pAvailable, StackPane square, boolean color) {
+	public Tour(boolean pAvailable, StackPane square, boolean color) {
 		super(pAvailable, square);
 		if(color == true) {
 			square.getChildren().add(imageView);
-			imageView.setImage(getPionBlack());
+			imageView.setImage(getTourBlack());
 			imageView.setFitWidth(64);
 			imageView.setFitHeight(64);
 			imageView.setPreserveRatio(true);
 			imageView.setSmooth(true);
 		    imageView.setCache(true);
+			
+			
 		}else {
 			square.getChildren().add(imageView);
-			imageView.setImage(getPionWhite());
+			imageView.setImage(getTourWhite());
 			imageView.setFitWidth(64);
 			imageView.setFitHeight(64);
 			imageView.setPreserveRatio(true);
 			imageView.setSmooth(true);
 		    imageView.setCache(true);
 		}
+		
 	}
 	
-	public Image getPionBlack() {
-		return pionBlack;
+	public Image getTourBlack() {
+		return tourBlack;
 	}
 	
-	public Image getPionWhite() {
-		return pionWhite;
+	public Image getTourWhite() {
+		return tourWhite;
 	}
 }

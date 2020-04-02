@@ -1,5 +1,5 @@
 package fr.anthony.chessGame.model;
 
-public class AccueilModel {
+public class Accueil {
 
 }

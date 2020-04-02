@@ -1,8 +1,8 @@
-package fr.anthony.chessGame.model;
+package fr.anthony.chessGame.model.Pieces;
 
 import javafx.scene.layout.StackPane;
 
-public class PieceModel {
+public class Piece {
 	
 	private boolean available;
 	private StackPane square;
@@ -26,7 +26,7 @@ public class PieceModel {
 	}
 
 
-	public PieceModel(boolean pAvailable, StackPane square) {
+	public Piece(boolean pAvailable, StackPane square) {
 		setAvailable(pAvailable);
 		setSquare(square);
 		

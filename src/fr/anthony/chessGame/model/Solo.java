@@ -1,9 +1,9 @@
 package fr.anthony.chessGame.model;
 
-public class SoloModel {
+public class Solo {
 	
 
-    public SoloModel() {
+    public Solo() {
         
        
     }

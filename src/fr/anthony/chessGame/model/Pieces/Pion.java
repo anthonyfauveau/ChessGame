@@ -1,21 +1,22 @@
-package fr.anthony.chessGame.model;
+package fr.anthony.chessGame.model.Pieces;
+
 
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.StackPane;
 
-public class RoiModel extends PieceModel{
+public class Pion extends Piece {
 	
-	public Image roiBlack = new Image("/fr/anthony/chessGame/items/kingBlack.png");
-	public Image roiWhite = new Image("/fr/anthony/chessGame/items/kingWhite.png");
+	
+	public Image pionBlack = new Image("/fr/anthony/chessGame/items/pawnBlack.png");
+	public Image pionWhite = new Image("/fr/anthony/chessGame/items/pawnWhite.png");
 	public ImageView imageView = new ImageView();
 	
-	public RoiModel(boolean pAvailable, StackPane square, boolean color) {
+	public Pion(boolean pAvailable, StackPane square, boolean color) {
 		super(pAvailable, square);
-		
 		if(color == true) {
 			square.getChildren().add(imageView);
-			imageView.setImage(getRoiBlack());
+			imageView.setImage(getPionBlack());
 			imageView.setFitWidth(64);
 			imageView.setFitHeight(64);
 			imageView.setPreserveRatio(true);
@@ -23,7 +24,7 @@ public class RoiModel extends PieceModel{
 		    imageView.setCache(true);
 		}else {
 			square.getChildren().add(imageView);
-			imageView.setImage(getRoiWhite());
+			imageView.setImage(getPionWhite());
 			imageView.setFitWidth(64);
 			imageView.setFitHeight(64);
 			imageView.setPreserveRatio(true);
@@ -32,12 +33,11 @@ public class RoiModel extends PieceModel{
 		}
 	}
 	
-	public Image getRoiBlack() {
-		return roiBlack;
+	public Image getPionBlack() {
+		return pionBlack;
 	}
 	
-	public Image getRoiWhite() {
-		return roiWhite;
+	public Image getPionWhite() {
+		return pionWhite;
 	}
-	
 }

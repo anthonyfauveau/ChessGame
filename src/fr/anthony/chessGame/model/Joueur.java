@@ -3,21 +3,23 @@ package fr.anthony.chessGame.model;
 import java.util.ArrayList;
 import java.util.List;
 
-public class JoueurModel {
+import fr.anthony.chessGame.model.Pieces.Piece;
+
+public class Joueur {
 	
 	 public final int PION = 8;
 	    public final int FOU = 2;
 	    public final int TOUR = 2;
 	    public boolean couleur;
 
-	    private List<PieceModel> pieces = new ArrayList<>();
+	    private List<Piece> pieces = new ArrayList<>();
 
-	    public JoueurModel(boolean pCouleur) {
+	    public Joueur(boolean pCouleur) {
 	        
 	        couleur = pCouleur;
 	    }
 
-	    public List<PieceModel> getPieces() {
+	    public List<Piece> getPieces() {
 	        return pieces;
 	    }
 

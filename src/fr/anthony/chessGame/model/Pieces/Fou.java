@@ -1,17 +1,17 @@
-package fr.anthony.chessGame.model;
+package fr.anthony.chessGame.model.Pieces;
 
 
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.StackPane;
 
-public class FouModel extends PieceModel {
+public class Fou extends Piece {
 	
 	public Image fouBlack = new Image("/fr/anthony/chessGame/items/bishopBlack.png");
 	public Image fouWhite = new Image("/fr/anthony/chessGame/items/bishopWhite.png");
 	public ImageView imageView = new ImageView();
 	
-	public FouModel(boolean pAvailable, StackPane square, boolean color) {
+	public Fou(boolean pAvailable, StackPane square, boolean color) {
 		super(pAvailable, square);
 		
 		if(color == true) {
