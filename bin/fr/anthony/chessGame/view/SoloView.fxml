@@ -2,6 +2,7 @@
 
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
@@ -39,259 +40,259 @@
                         <RowConstraints maxHeight="260.0" minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                      <children>
-                        <StackPane fx:id="square_0_0" prefHeight="150.0" prefWidth="200.0">
+                        <StackPane fx:id="square_0_0" onMouseClicked="#clickStackPane" prefHeight="150.0" prefWidth="200.0">
                            <cursor>
                               <Cursor fx:constant="OPEN_HAND" />
                            </cursor></StackPane>
-                        <StackPane fx:id="square_1_0" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ECFAFF;" GridPane.columnIndex="1">
+                        <StackPane fx:id="square_1_0" onMouseClicked="#clickStackPane" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ECFAFF;" GridPane.columnIndex="1">
                            <cursor>
                               <Cursor fx:constant="OPEN_HAND" />
                            </cursor></StackPane>
-                        <StackPane fx:id="square_2_0" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2">
+                        <StackPane fx:id="square_2_0" onMouseClicked="#clickStackPane" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2">
                            <cursor>
                               <Cursor fx:constant="OPEN_HAND" />
                            </cursor></StackPane>
-                        <StackPane fx:id="square_3_0" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ECFAFF;" GridPane.columnIndex="3">
+                        <StackPane fx:id="square_3_0" onMouseClicked="#clickStackPane" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ECFAFF;" GridPane.columnIndex="3">
                            <cursor>
                               <Cursor fx:constant="OPEN_HAND" />
                            </cursor></StackPane>
-                        <StackPane fx:id="square_4_0" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="4">
+                        <StackPane fx:id="square_4_0" onMouseClicked="#clickStackPane" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="4">
                            <cursor>
                               <Cursor fx:constant="OPEN_HAND" />
                            </cursor></StackPane>
-                        <StackPane fx:id="square_5_0" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ECFAFF;" GridPane.columnIndex="5">
+                        <StackPane fx:id="square_5_0" onMouseClicked="#clickStackPane" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ECFAFF;" GridPane.columnIndex="5">
                            <cursor>
                               <Cursor fx:constant="OPEN_HAND" />
                            </cursor></StackPane>
-                        <StackPane fx:id="square_6_0" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="6">
+                        <StackPane fx:id="square_6_0" onMouseClicked="#clickStackPane" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="6">
                            <cursor>
                               <Cursor fx:constant="OPEN_HAND" />
                            </cursor></StackPane>
-                        <StackPane fx:id="square_7_0" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ECFAFF;" GridPane.columnIndex="7">
+                        <StackPane fx:id="square_7_0" onMouseClicked="#clickStackPane" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ECFAFF;" GridPane.columnIndex="7">
                            <cursor>
                               <Cursor fx:constant="OPEN_HAND" />
                            </cursor></StackPane>
-                        <StackPane fx:id="square_0_1" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ECFAFF;" GridPane.rowIndex="1">
+                        <StackPane fx:id="square_0_1" onMouseClicked="#clickStackPane" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ECFAFF;" GridPane.rowIndex="1">
                            <cursor>
                               <Cursor fx:constant="OPEN_HAND" />
                            </cursor></StackPane>
-                        <StackPane fx:id="square_1_1" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                        <StackPane fx:id="square_1_1" onMouseClicked="#clickStackPane" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
                            <cursor>
                               <Cursor fx:constant="OPEN_HAND" />
                            </cursor></StackPane>
-                        <StackPane fx:id="square_2_1" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ECFAFF;" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                        <StackPane fx:id="square_2_1" onMouseClicked="#clickStackPane" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ECFAFF;" GridPane.columnIndex="2" GridPane.rowIndex="1">
                            <cursor>
                               <Cursor fx:constant="OPEN_HAND" />
                            </cursor></StackPane>
-                        <StackPane fx:id="square_3_1" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                        <StackPane fx:id="square_3_1" onMouseClicked="#clickStackPane" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
                            <cursor>
                               <Cursor fx:constant="OPEN_HAND" />
                            </cursor></StackPane>
-                        <StackPane fx:id="square_4_1" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ECFAFF;" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                        <StackPane fx:id="square_4_1" onMouseClicked="#clickStackPane" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ECFAFF;" GridPane.columnIndex="4" GridPane.rowIndex="1">
                            <cursor>
                               <Cursor fx:constant="OPEN_HAND" />
                            </cursor></StackPane>
-                        <StackPane fx:id="square_5_1" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                        <StackPane fx:id="square_5_1" onMouseClicked="#clickStackPane" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="1">
                            <cursor>
                               <Cursor fx:constant="OPEN_HAND" />
                            </cursor></StackPane>
-                        <StackPane fx:id="square_6_1" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ECFAFF;" GridPane.columnIndex="6" GridPane.rowIndex="1">
+                        <StackPane fx:id="square_6_1" onMouseClicked="#clickStackPane" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ECFAFF;" GridPane.columnIndex="6" GridPane.rowIndex="1">
                            <cursor>
                               <Cursor fx:constant="OPEN_HAND" />
                            </cursor></StackPane>
-                        <StackPane fx:id="square_7_1" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="1">
+                        <StackPane fx:id="square_7_1" onMouseClicked="#clickStackPane" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="1">
                            <cursor>
                               <Cursor fx:constant="OPEN_HAND" />
                            </cursor></StackPane>
-                        <StackPane fx:id="square_0_2" prefHeight="150.0" prefWidth="200.0" GridPane.rowIndex="2">
+                        <StackPane fx:id="square_0_2" onMouseClicked="#clickStackPane" prefHeight="150.0" prefWidth="200.0" GridPane.rowIndex="2">
                            <cursor>
                               <Cursor fx:constant="OPEN_HAND" />
                            </cursor></StackPane>
-                        <StackPane fx:id="square_1_2" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ECFAFF;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                        <StackPane fx:id="square_1_2" onMouseClicked="#clickStackPane" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ECFAFF;" GridPane.columnIndex="1" GridPane.rowIndex="2">
                            <cursor>
                               <Cursor fx:constant="OPEN_HAND" />
                            </cursor></StackPane>
-                        <StackPane fx:id="square_2_2" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                        <StackPane fx:id="square_2_2" onMouseClicked="#clickStackPane" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
                            <cursor>
                               <Cursor fx:constant="OPEN_HAND" />
                            </cursor></StackPane>
-                        <StackPane fx:id="square_3_2" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ECFAFF;" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                        <StackPane fx:id="square_3_2" onMouseClicked="#clickStackPane" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ECFAFF;" GridPane.columnIndex="3" GridPane.rowIndex="2">
                            <cursor>
                               <Cursor fx:constant="OPEN_HAND" />
                            </cursor></StackPane>
-                        <StackPane fx:id="square_4_2" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                        <StackPane fx:id="square_4_2" onMouseClicked="#clickStackPane" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="2">
                            <cursor>
                               <Cursor fx:constant="OPEN_HAND" />
                            </cursor></StackPane>
-                        <StackPane fx:id="square_5_2" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ECFAFF;" GridPane.columnIndex="5" GridPane.rowIndex="2">
+                        <StackPane fx:id="square_5_2" onMouseClicked="#clickStackPane" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ECFAFF;" GridPane.columnIndex="5" GridPane.rowIndex="2">
                            <cursor>
                               <Cursor fx:constant="OPEN_HAND" />
                            </cursor></StackPane>
-                        <StackPane fx:id="square_6_2" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="2">
+                        <StackPane fx:id="square_6_2" onMouseClicked="#clickStackPane" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="2">
                            <cursor>
                               <Cursor fx:constant="OPEN_HAND" />
                            </cursor></StackPane>
-                        <StackPane fx:id="square_7_2" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ECFAFF;" GridPane.columnIndex="7" GridPane.rowIndex="2">
+                        <StackPane fx:id="square_7_2" onMouseClicked="#clickStackPane" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ECFAFF;" GridPane.columnIndex="7" GridPane.rowIndex="2">
                            <cursor>
                               <Cursor fx:constant="OPEN_HAND" />
                            </cursor></StackPane>
-                        <StackPane fx:id="square_0_3" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ECFAFF;" GridPane.rowIndex="3">
+                        <StackPane fx:id="square_0_3" onMouseClicked="#clickStackPane" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ECFAFF;" GridPane.rowIndex="3">
                            <cursor>
                               <Cursor fx:constant="OPEN_HAND" />
                            </cursor></StackPane>
-                        <StackPane fx:id="square_1_3" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                        <StackPane fx:id="square_1_3" onMouseClicked="#clickStackPane" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
                            <cursor>
                               <Cursor fx:constant="OPEN_HAND" />
                            </cursor></StackPane>
-                        <StackPane fx:id="square_2_3" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ECFAFF;" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                        <StackPane fx:id="square_2_3" onMouseClicked="#clickStackPane" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ECFAFF;" GridPane.columnIndex="2" GridPane.rowIndex="3">
                            <cursor>
                               <Cursor fx:constant="OPEN_HAND" />
                            </cursor></StackPane>
-                        <StackPane fx:id="square_3_3" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                        <StackPane fx:id="square_3_3" onMouseClicked="#clickStackPane" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="3">
                            <cursor>
                               <Cursor fx:constant="OPEN_HAND" />
                            </cursor></StackPane>
-                        <StackPane fx:id="square_4_3" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ECFAFF;" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                        <StackPane fx:id="square_4_3" onMouseClicked="#clickStackPane" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ECFAFF;" GridPane.columnIndex="4" GridPane.rowIndex="3">
                            <cursor>
                               <Cursor fx:constant="OPEN_HAND" />
                            </cursor></StackPane>
-                        <StackPane fx:id="square_5_3" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="3">
+                        <StackPane fx:id="square_5_3" onMouseClicked="#clickStackPane" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="3">
                            <cursor>
                               <Cursor fx:constant="OPEN_HAND" />
                            </cursor></StackPane>
-                        <StackPane fx:id="square_6_3" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ECFAFF;" GridPane.columnIndex="6" GridPane.rowIndex="3">
+                        <StackPane fx:id="square_6_3" onMouseClicked="#clickStackPane" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ECFAFF;" GridPane.columnIndex="6" GridPane.rowIndex="3">
                            <cursor>
                               <Cursor fx:constant="OPEN_HAND" />
                            </cursor></StackPane>
-                        <StackPane fx:id="square_7_3" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="3">
+                        <StackPane fx:id="square_7_3" onMouseClicked="#clickStackPane" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="3">
                            <cursor>
                               <Cursor fx:constant="OPEN_HAND" />
                            </cursor></StackPane>
-                        <StackPane fx:id="square_0_4" prefHeight="150.0" prefWidth="200.0" GridPane.rowIndex="4">
+                        <StackPane fx:id="square_0_4" onMouseClicked="#clickStackPane" prefHeight="150.0" prefWidth="200.0" GridPane.rowIndex="4">
                            <cursor>
                               <Cursor fx:constant="OPEN_HAND" />
                            </cursor></StackPane>
-                        <StackPane fx:id="square_1_4" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ECFAFF;" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                        <StackPane fx:id="square_1_4" onMouseClicked="#clickStackPane" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ECFAFF;" GridPane.columnIndex="1" GridPane.rowIndex="4">
                            <cursor>
                               <Cursor fx:constant="OPEN_HAND" />
                            </cursor></StackPane>
-                        <StackPane fx:id="square_2_4" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                        <StackPane fx:id="square_2_4" onMouseClicked="#clickStackPane" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
                            <cursor>
                               <Cursor fx:constant="OPEN_HAND" />
                            </cursor></StackPane>
-                        <StackPane fx:id="square_3_4" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ECFAFF;" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                        <StackPane fx:id="square_3_4" onMouseClicked="#clickStackPane" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ECFAFF;" GridPane.columnIndex="3" GridPane.rowIndex="4">
                            <cursor>
                               <Cursor fx:constant="OPEN_HAND" />
                            </cursor></StackPane>
-                        <StackPane fx:id="square_4_4" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="4">
+                        <StackPane fx:id="square_4_4" onMouseClicked="#clickStackPane" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="4">
                            <cursor>
                               <Cursor fx:constant="OPEN_HAND" />
                            </cursor></StackPane>
-                        <StackPane fx:id="square_5_4" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ECFAFF;" GridPane.columnIndex="5" GridPane.rowIndex="4">
+                        <StackPane fx:id="square_5_4" onMouseClicked="#clickStackPane" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ECFAFF;" GridPane.columnIndex="5" GridPane.rowIndex="4">
                            <cursor>
                               <Cursor fx:constant="OPEN_HAND" />
                            </cursor></StackPane>
-                        <StackPane fx:id="square_6_4" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="4">
+                        <StackPane fx:id="square_6_4" onMouseClicked="#clickStackPane" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="4">
                            <cursor>
                               <Cursor fx:constant="OPEN_HAND" />
                            </cursor></StackPane>
-                        <StackPane fx:id="square_7_4" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ECFAFF;" GridPane.columnIndex="7" GridPane.rowIndex="4">
+                        <StackPane fx:id="square_7_4" onMouseClicked="#clickStackPane" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ECFAFF;" GridPane.columnIndex="7" GridPane.rowIndex="4">
                            <cursor>
                               <Cursor fx:constant="OPEN_HAND" />
                            </cursor></StackPane>
-                        <StackPane fx:id="square_0_5" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ECFAFF;" GridPane.rowIndex="5">
+                        <StackPane fx:id="square_0_5" onMouseClicked="#clickStackPane" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ECFAFF;" GridPane.rowIndex="5">
                            <cursor>
                               <Cursor fx:constant="OPEN_HAND" />
                            </cursor></StackPane>
-                        <StackPane fx:id="square_1_5" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                        <StackPane fx:id="square_1_5" onMouseClicked="#clickStackPane" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
                            <cursor>
                               <Cursor fx:constant="OPEN_HAND" />
                            </cursor></StackPane>
-                        <StackPane fx:id="square_2_5" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ECFAFF;" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                        <StackPane fx:id="square_2_5" onMouseClicked="#clickStackPane" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ECFAFF;" GridPane.columnIndex="2" GridPane.rowIndex="5">
                            <cursor>
                               <Cursor fx:constant="OPEN_HAND" />
                            </cursor></StackPane>
-                        <StackPane fx:id="square_3_5" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="5">
+                        <StackPane fx:id="square_3_5" onMouseClicked="#clickStackPane" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="5">
                            <cursor>
                               <Cursor fx:constant="OPEN_HAND" />
                            </cursor></StackPane>
-                        <StackPane fx:id="square_4_5" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ECFAFF;" GridPane.columnIndex="4" GridPane.rowIndex="5">
+                        <StackPane fx:id="square_4_5" onMouseClicked="#clickStackPane" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ECFAFF;" GridPane.columnIndex="4" GridPane.rowIndex="5">
                            <cursor>
                               <Cursor fx:constant="OPEN_HAND" />
                            </cursor></StackPane>
-                        <StackPane fx:id="square_5_5" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="5">
+                        <StackPane fx:id="square_5_5" onMouseClicked="#clickStackPane" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="5">
                            <cursor>
                               <Cursor fx:constant="OPEN_HAND" />
                            </cursor></StackPane>
-                        <StackPane fx:id="square_6_5" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ECFAFF;" GridPane.columnIndex="6" GridPane.rowIndex="5">
+                        <StackPane fx:id="square_6_5" onMouseClicked="#clickStackPane" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ECFAFF;" GridPane.columnIndex="6" GridPane.rowIndex="5">
                            <cursor>
                               <Cursor fx:constant="OPEN_HAND" />
                            </cursor></StackPane>
-                        <StackPane fx:id="square_7_5" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="5">
+                        <StackPane fx:id="square_7_5" onMouseClicked="#clickStackPane" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="5">
                            <cursor>
                               <Cursor fx:constant="OPEN_HAND" />
                            </cursor></StackPane>
-                        <StackPane fx:id="square_0_6" prefHeight="150.0" prefWidth="200.0" GridPane.rowIndex="6">
+                        <StackPane fx:id="square_0_6" onMouseClicked="#clickStackPane" prefHeight="150.0" prefWidth="200.0" GridPane.rowIndex="6">
                            <cursor>
                               <Cursor fx:constant="OPEN_HAND" />
                            </cursor></StackPane>
-                        <StackPane fx:id="square_1_6" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ECFAFF;" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                        <StackPane fx:id="square_1_6" onMouseClicked="#clickStackPane" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ECFAFF;" GridPane.columnIndex="1" GridPane.rowIndex="6">
                            <cursor>
                               <Cursor fx:constant="OPEN_HAND" />
                            </cursor></StackPane>
-                        <StackPane fx:id="square_2_6" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                        <StackPane fx:id="square_2_6" onMouseClicked="#clickStackPane" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="6">
                            <cursor>
                               <Cursor fx:constant="OPEN_HAND" />
                            </cursor></StackPane>
-                        <StackPane fx:id="square_3_6" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ECFAFF;" GridPane.columnIndex="3" GridPane.rowIndex="6">
+                        <StackPane fx:id="square_3_6" onMouseClicked="#clickStackPane" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ECFAFF;" GridPane.columnIndex="3" GridPane.rowIndex="6">
                            <cursor>
                               <Cursor fx:constant="OPEN_HAND" />
                            </cursor></StackPane>
-                        <StackPane fx:id="square_4_6" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="6">
+                        <StackPane fx:id="square_4_6" onMouseClicked="#clickStackPane" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="6">
                            <cursor>
                               <Cursor fx:constant="OPEN_HAND" />
                            </cursor></StackPane>
-                        <StackPane fx:id="square_5_6" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ECFAFF;" GridPane.columnIndex="5" GridPane.rowIndex="6">
+                        <StackPane fx:id="square_5_6" onMouseClicked="#clickStackPane" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ECFAFF;" GridPane.columnIndex="5" GridPane.rowIndex="6">
                            <cursor>
                               <Cursor fx:constant="OPEN_HAND" />
                            </cursor></StackPane>
-                        <StackPane fx:id="square_6_6" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="6">
+                        <StackPane fx:id="square_6_6" onMouseClicked="#clickStackPane" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="6">
                            <cursor>
                               <Cursor fx:constant="OPEN_HAND" />
                            </cursor></StackPane>
-                        <StackPane fx:id="square_7_6" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ECFAFF;" GridPane.columnIndex="7" GridPane.rowIndex="6">
+                        <StackPane fx:id="square_7_6" onMouseClicked="#clickStackPane" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ECFAFF;" GridPane.columnIndex="7" GridPane.rowIndex="6">
                            <cursor>
                               <Cursor fx:constant="OPEN_HAND" />
                            </cursor></StackPane>
-                        <StackPane fx:id="square_0_7" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ECFAFF;" GridPane.rowIndex="7">
+                        <StackPane fx:id="square_0_7" onMouseClicked="#clickStackPane" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ECFAFF;" GridPane.rowIndex="7">
                            <cursor>
                               <Cursor fx:constant="OPEN_HAND" />
                            </cursor></StackPane>
-                        <StackPane fx:id="square_1_7" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                        <StackPane fx:id="square_1_7" onMouseClicked="#clickStackPane" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="7">
                            <cursor>
                               <Cursor fx:constant="OPEN_HAND" />
                            </cursor></StackPane>
-                        <StackPane fx:id="square_2_7" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ECFAFF;" GridPane.columnIndex="2" GridPane.rowIndex="7">
+                        <StackPane fx:id="square_2_7" onMouseClicked="#clickStackPane" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ECFAFF;" GridPane.columnIndex="2" GridPane.rowIndex="7">
                            <cursor>
                               <Cursor fx:constant="OPEN_HAND" />
                            </cursor></StackPane>
-                        <StackPane fx:id="square_3_7" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="7">
+                        <StackPane fx:id="square_3_7" onMouseClicked="#clickStackPane" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="7">
                            <cursor>
                               <Cursor fx:constant="OPEN_HAND" />
                            </cursor></StackPane>
-                        <StackPane fx:id="square_4_7" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ECFAFF;" GridPane.columnIndex="4" GridPane.rowIndex="7">
+                        <StackPane fx:id="square_4_7" onMouseClicked="#clickStackPane" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ECFAFF;" GridPane.columnIndex="4" GridPane.rowIndex="7">
                            <cursor>
                               <Cursor fx:constant="OPEN_HAND" />
                            </cursor></StackPane>
-                        <StackPane fx:id="square_5_7" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="7">
+                        <StackPane fx:id="square_5_7" onMouseClicked="#clickStackPane" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="7">
                            <cursor>
                               <Cursor fx:constant="OPEN_HAND" />
                            </cursor></StackPane>
-                        <StackPane fx:id="square_6_7" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ECFAFF;" GridPane.columnIndex="6" GridPane.rowIndex="7">
+                        <StackPane fx:id="square_6_7" onMouseClicked="#clickStackPane" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ECFAFF;" GridPane.columnIndex="6" GridPane.rowIndex="7">
                            <cursor>
                               <Cursor fx:constant="OPEN_HAND" />
                            </cursor></StackPane>
-                        <StackPane fx:id="square_7_7" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="7">
+                        <StackPane fx:id="square_7_7" onMouseClicked="#clickStackPane" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="7">
                            <cursor>
                               <Cursor fx:constant="OPEN_HAND" />
                            </cursor></StackPane>
@@ -306,7 +307,7 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </Button>
-                  <Button layoutX="13.0" layoutY="686.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="169.0" text="Nouvelle partie">
+                  <Button layoutX="13.0" layoutY="686.0" mnemonicParsing="false" onAction="#clickRelaodGame" prefHeight="34.0" prefWidth="169.0" text="Nouvelle partie">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>
@@ -321,6 +322,16 @@
                         <Font name="Candara Light" size="26.0" />
                      </font>
                   </Text>
+                  <Label fx:id="labelTurn" layoutX="115.0" layoutY="115.0" text="Blanc">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="43.0" layoutY="121.0" text="Au tour des : ">
+                     <font>
+                        <Font name="Candara Light" size="12.0" />
+                     </font>
+                  </Label>
                </children>
             </AnchorPane>
          </children>

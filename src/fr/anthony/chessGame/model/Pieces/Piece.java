@@ -1,24 +1,38 @@
 package fr.anthony.chessGame.model.Pieces;
 
-import javafx.scene.layout.StackPane;
+import fr.anthony.chessGame.model.Deplacement;
 
-public class Piece {
+
+public abstract class Piece {
 	
 	private boolean available;
-	private StackPane square;
+	private String imagePath;
+	private int color;
 	
+	public String getImagePath() {
+		return imagePath;
+	}
+
+
+	public void setImagePath(String getImagePath) {
+		this.imagePath = getImagePath;
+	}
+
+	
+	public int getColor() {
+		return color;
+	}
+	
+	public void setColor(int color) {
+		this.color = color;
+	}
+
+
 	public boolean isAvailable() {
 		return available;
 	}
 	
-	public StackPane getSquare() {
-		return square;
-	}
-
-	public void setSquare(StackPane square) {
-		this.square = square;
-	}
-
+	
 	
 
 	public void setAvailable(boolean available) {
@@ -26,9 +40,14 @@ public class Piece {
 	}
 
 
-	public Piece(boolean pAvailable, StackPane square) {
+	public Piece(boolean pAvailable, String pimagePath, int color) {
 		setAvailable(pAvailable);
-		setSquare(square);
+		imagePath = pimagePath;
+		this.color = color;
 		
 	}
+	
+	public abstract int[][] deplacement(Deplacement[][] joueur, int ligne, int colonne);
+	
+	
 }

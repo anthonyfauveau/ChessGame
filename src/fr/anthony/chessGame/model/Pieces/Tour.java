@@ -2,46 +2,75 @@ package fr.anthony.chessGame.model.Pieces;
 
 
 
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
-import javafx.scene.layout.StackPane;
+import fr.anthony.chessGame.model.Deplacement;
 
 public class Tour extends Piece{
 	
-	public Image tourBlack = new Image("/fr/anthony/chessGame/items/tourBlack.png");
-	public Image tourWhite = new Image("/fr/anthony/chessGame/items/tourWhite.png");
-	public ImageView imageView = new ImageView() ;
 	
 	
-	public Tour(boolean pAvailable, StackPane square, boolean color) {
-		super(pAvailable, square);
-		if(color == true) {
-			square.getChildren().add(imageView);
-			imageView.setImage(getTourBlack());
-			imageView.setFitWidth(64);
-			imageView.setFitHeight(64);
-			imageView.setPreserveRatio(true);
-			imageView.setSmooth(true);
-		    imageView.setCache(true);
-			
-			
-		}else {
-			square.getChildren().add(imageView);
-			imageView.setImage(getTourWhite());
-			imageView.setFitWidth(64);
-			imageView.setFitHeight(64);
-			imageView.setPreserveRatio(true);
-			imageView.setSmooth(true);
-		    imageView.setCache(true);
-		}
+	
+	public Tour(boolean pAvailable, String imagepath, int color) {
+		super(pAvailable,imagepath, color);
 		
 	}
 	
-	public Image getTourBlack() {
-		return tourBlack;
-	}
 	
-	public Image getTourWhite() {
-		return tourWhite;
+	@Override
+	public int[][] deplacement(Deplacement[][] joueur, int ligne, int colonne) {
+		int[][] result = new int[8][8];
+		for (int i = 0; i < 8; i++) {
+			for (int j = 0; j < 8; j++) {
+				result[i][j] = 0;
+			}
+		}
+
+		// Déplacement gauche
+		for (int i = colonne - 1; i >= 0; i--) {
+			if (joueur[ligne][i].getPiece() == null) {
+				result[ligne][i] = 1;
+			} else if (joueur[ligne][i].getPiece().getColor() != getColor()) {
+				result[ligne][i] = 1;
+				break;
+			} else {
+				break;
+			}
+		}
+
+		// Déplacement bas
+		for (int i = ligne + 1; i <= 7; i++) {
+			if (joueur[i][colonne].getPiece() == null) {
+				result[i][colonne] = 1;
+			} else if (joueur[i][colonne].getPiece().getColor() != getColor()) {
+				result[i][colonne] = 1;
+				break;
+			} else {
+				break;
+			}
+		}
+
+		// Déplacement droite
+		for (int i = colonne + 1; i <= 7; i++) {
+			if (joueur[ligne][i].getPiece() == null) {
+				result[ligne][i] = 1;
+			} else if (joueur[ligne][i].getPiece().getColor() != getColor()) {
+				result[ligne][i] = 1;
+				break;
+			} else {
+				break;
+			}
+		}
+		// Déplacement haut
+		for (int i = ligne - 1; i >= 0; i--) {
+			if (joueur[i][colonne].getPiece() == null) {
+				result[i][colonne] = 1;
+			} else if (joueur[i][colonne].getPiece().getColor() != getColor()) {
+				result[i][colonne] = 1;
+				break;
+			} else {
+				break;
+			}
+		}
+
+		return result;
 	}
 }

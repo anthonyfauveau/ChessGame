@@ -1,43 +1,76 @@
 package fr.anthony.chessGame.model.Pieces;
 
 
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
-import javafx.scene.layout.StackPane;
+import fr.anthony.chessGame.model.Deplacement;
 
 public class Pion extends Piece {
+
+	public Pion(boolean pAvailable,String imagepath, int color) {
+		super(pAvailable,imagepath, color);
+
+	}
 	
-	
-	public Image pionBlack = new Image("/fr/anthony/chessGame/items/pawnBlack.png");
-	public Image pionWhite = new Image("/fr/anthony/chessGame/items/pawnWhite.png");
-	public ImageView imageView = new ImageView();
-	
-	public Pion(boolean pAvailable, StackPane square, boolean color) {
-		super(pAvailable, square);
-		if(color == true) {
-			square.getChildren().add(imageView);
-			imageView.setImage(getPionBlack());
-			imageView.setFitWidth(64);
-			imageView.setFitHeight(64);
-			imageView.setPreserveRatio(true);
-			imageView.setSmooth(true);
-		    imageView.setCache(true);
-		}else {
-			square.getChildren().add(imageView);
-			imageView.setImage(getPionWhite());
-			imageView.setFitWidth(64);
-			imageView.setFitHeight(64);
-			imageView.setPreserveRatio(true);
-			imageView.setSmooth(true);
-		    imageView.setCache(true);
+
+	@Override
+	public int[][] deplacement(Deplacement[][] joueur, int ligne, int colonne) {
+		int[][] result = new int[8][8];
+		for (int i = 0; i < 8; i++) {
+			for (int j = 0; j < 8; j++) {
+				result[i][j] = 0;
+			}
 		}
-	}
-	
-	public Image getPionBlack() {
-		return pionBlack;
-	}
-	
-	public Image getPionWhite() {
-		return pionWhite;
+
+		// Déplacement des blanc (vers le haut)
+		if (getColor() == 0) {
+
+			// Départ déplacement de deux cases
+			if (ligne == 6 && joueur[ligne - 1][colonne].getPiece() == null
+					&& joueur[ligne - 2][colonne].getPiece() == null) {
+				result[ligne - 2][colonne] = 1;
+			}
+
+			// Déplacement normal avant la dernière ligne
+			if (ligne > 0 && joueur[ligne - 1][colonne].getPiece() == null) {
+				result[ligne - 1][colonne] = 1;
+			}
+
+			// Manger une pièce à gauche
+			if (ligne > 0 && colonne > 0 && joueur[ligne - 1][colonne - 1].getPiece() != null
+					&& joueur[ligne - 1][colonne - 1].getPiece().getColor() != getColor()) {
+				result[ligne - 1][colonne - 1] = 1;
+			}
+
+			// Manger une pièce à droite
+			if (ligne > 0 && colonne < 7 && joueur[ligne - 1][colonne + 1].getPiece() != null
+					&& joueur[ligne - 1][colonne + 1].getPiece().getColor() != getColor()) {
+				result[ligne - 1][colonne + 1] = 1;
+			}
+		} else {
+
+			// Départ déplacement de deux cases
+			if (ligne == 1 && joueur[ligne + 1][colonne].getPiece() == null
+					&& joueur[ligne + 2][colonne].getPiece() == null) {
+				result[ligne + 2][colonne] = 1;
+			}
+
+			// Déplacement normal avant la dernière ligne
+			if (ligne < 7 && joueur[ligne + 1][colonne].getPiece() == null) {
+				result[ligne + 1][colonne] = 1;
+			}
+
+			// Manger une pièce à gauche
+			if (ligne < 7 && colonne > 0 && joueur[ligne + 1][colonne - 1].getPiece() != null
+					&& joueur[ligne + 1][colonne - 1].getPiece().getColor() != getColor()) {
+				result[ligne + 1][colonne - 1] = 1;
+			}
+
+			// Manger une pièce à droite
+			if (ligne < 7 && colonne < 7 && joueur[ligne + 1][colonne + 1].getPiece() != null
+					&& joueur[ligne + 1][colonne + 1].getPiece().getColor() != getColor()) {
+				result[ligne + 1][colonne + 1] = 1;
+			}
+			
+		}
+		return result;
 	}
 }
